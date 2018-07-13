@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="5by-5I-4qB">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="RhQ-ae-Sv3">
+            <objects>
+                <navigationController navigationBarHidden="YES" id="5by-5I-4qB" sceneMemberID="viewController">
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ccO-DK-BKy">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="VdN-fd-w8l" kind="relationship" relationship="rootViewController" id="dIn-Hf-CmQ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="td6-XC-ixz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-202" y="379"/>
+        </scene>
+        <!--Robot Starting View Controller-->
+        <scene sceneID="H0d-fo-R8E">
+            <objects>
+                <viewController id="VdN-fd-w8l" customClass="RobotStartingViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="MrL-2J-PHe"/>
+                        <viewControllerLayoutGuide type="bottom" id="qjl-pX-lbZ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="SbP-gN-dS4">
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="320"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="YwA-bS-bKw">
+                                <rect key="frame" x="0.0" y="0.0" width="480" height="320"/>
+                            </imageView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" bounces="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" keyboardDismissMode="interactive" translatesAutoresizingMaskIntoConstraints="NO" id="Nk1-1z-0JD">
+                                <rect key="frame" x="0.0" y="0.0" width="480" height="320"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="WjS-cK-kHh">
+                                        <rect key="frame" x="28" y="25" width="424" height="106"/>
+                                    </imageView>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="34y-aN-tE1">
+                                        <rect key="frame" x="0.0" y="0.0" width="480" height="320"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Addresse_IP" translatesAutoresizingMaskIntoConstraints="NO" id="0Hd-IK-cWf">
+                                                <rect key="frame" x="39" y="232" width="235" height="38"/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Addresse_IP" translatesAutoresizingMaskIntoConstraints="NO" id="52S-JK-aQs">
+                                                <rect key="frame" x="39" y="164" width="235" height="38"/>
+                                            </imageView>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="IP Caméra" minimumFontSize="17" background="Addresse_IP" translatesAutoresizingMaskIntoConstraints="NO" id="Ndc-4v-HPc">
+                                                <rect key="frame" x="48" y="232" width="218" height="38"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="numbersAndPunctuation" keyboardAppearance="alert" returnKeyType="go"/>
+                                                <connections>
+                                                    <action selector="editingBegin:" destination="VdN-fd-w8l" eventType="editingDidBegin" id="vB7-AU-9gv"/>
+                                                    <action selector="editingEnd:" destination="VdN-fd-w8l" eventType="editingDidEnd" id="5MP-0V-2Be"/>
+                                                    <action selector="resignKeyboardEnd:" destination="VdN-fd-w8l" eventType="editingDidEndOnExit" id="eDR-Du-u9z"/>
+                                                    <action selector="touchOutside:" destination="VdN-fd-w8l" eventType="touchUpOutside" id="szV-MB-n2P"/>
+                                                </connections>
+                                            </textField>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" placeholder="Adresse IP" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Vxa-vx-eHK">
+                                                <rect key="frame" x="48" y="164" width="218" height="38"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="numbersAndPunctuation" keyboardAppearance="alert" returnKeyType="next"/>
+                                                <connections>
+                                                    <action selector="editingBegin:" destination="VdN-fd-w8l" eventType="editingDidBegin" id="Xcv-te-A8l"/>
+                                                    <action selector="editingEnd:" destination="VdN-fd-w8l" eventType="editingDidEnd" id="2yP-Rv-HHc"/>
+                                                    <action selector="resignKeyboard:" destination="VdN-fd-w8l" eventType="editingDidEndOnExit" id="NfU-EU-YWe"/>
+                                                    <action selector="touchOutside:" destination="VdN-fd-w8l" eventType="touchUpOutside" id="k8X-CM-Ml3"/>
+                                                </connections>
+                                            </textField>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="otq-CJ-fGF">
+                                                <rect key="frame" x="324" y="195" width="114" height="41"/>
+                                                <state key="normal" image="Button" backgroundImage="Button">
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <state key="selected" image="Button_Pressed" backgroundImage="Button_Pressed"/>
+                                                <connections>
+                                                    <action selector="start:" destination="VdN-fd-w8l" eventType="touchUpInside" id="hVT-jP-Ckv"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </view>
+                                </subviews>
+                                <connections>
+                                    <outlet property="delegate" destination="VdN-fd-w8l" id="cVC-lc-ipG"/>
+                                </connections>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="3V8-BP-Tp6"/>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="IPCamera" destination="Ndc-4v-HPc" id="ZkQ-IB-j6r"/>
+                        <outlet property="addrIPField" destination="Vxa-vx-eHK" id="iob-Y5-6GD"/>
+                        <outlet property="blankRect" destination="0Hd-IK-cWf" id="BRN-d5-R3k"/>
+                        <outlet property="blankRect2" destination="52S-JK-aQs" id="oUg-lh-skw"/>
+                        <outlet property="fadingView" destination="34y-aN-tE1" id="Op0-BF-RXl"/>
+                        <outlet property="logoView" destination="WjS-cK-kHh" id="XE4-Kk-8WY"/>
+                        <outlet property="scrollView" destination="Nk1-1z-0JD" id="mFU-0B-kpc"/>
+                        <outlet property="startButton" destination="otq-CJ-fGF" id="bkM-hm-62Q"/>
+                        <segue destination="3V4-MY-6vC" kind="push" identifier="driving" id="SPI-0r-YkV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ykw-SW-J60" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="513" y="379"/>
+        </scene>
+        <!--Robot Driving View Controller-->
+        <scene sceneID="oxg-zX-Snk">
+            <objects>
+                <viewController useStoryboardIdentifierAsRestorationIdentifier="YES" id="3V4-MY-6vC" customClass="RobotDrivingViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="604-nA-Q2I"/>
+                        <viewControllerLayoutGuide type="bottom" id="qwX-ka-i6v"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hkT-xc-6h9">
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="320"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GLr-F0-LR8">
+                                <rect key="frame" x="0.0" y="0.0" width="480" height="320"/>
+                                <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            </webView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gc7-Jj-t7H" userLabel="Joystick View Motor" customClass="JoyStickView">
+                                <rect key="frame" x="313" y="143" width="150" height="150"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="stick_base.png" translatesAutoresizingMaskIntoConstraints="NO" id="BSA-zF-g9c">
+                                        <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lfY-gu-8qC">
+                                        <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                                    </imageView>
+                                </subviews>
+                                <connections>
+                                    <outlet property="stickView" destination="lfY-gu-8qC" id="cpP-ID-VWO"/>
+                                    <outlet property="stickViewBase" destination="BSA-zF-g9c" id="QqK-nd-Kk3"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UgF-eo-Tyg" userLabel="Joystick View Camera" customClass="JoyStickView">
+                                <rect key="frame" x="23" y="143" width="150" height="150"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="stick_base.png" translatesAutoresizingMaskIntoConstraints="NO" id="xf0-HL-lpu">
+                                        <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ebN-wk-TYJ">
+                                        <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                                    </imageView>
+                                </subviews>
+                                <connections>
+                                    <outlet property="stickView" destination="ebN-wk-TYJ" id="cmf-aQ-9gn"/>
+                                    <outlet property="stickViewBase" destination="xf0-HL-lpu" id="XAe-O6-1dB"/>
+                                </connections>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k5O-Pd-Bs3">
+                                <rect key="frame" x="185" y="279" width="111" height="41"/>
+                                <state key="normal" image="ButtonStop">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="selected" image="Button_PressedStop"/>
+                                <connections>
+                                    <action selector="stopDriving:" destination="3V4-MY-6vC" eventType="touchUpInside" id="ls8-gS-rfp"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cXe-Lf-UEm">
+                                <rect key="frame" x="0.0" y="35" width="64" height="30"/>
+                                <state key="normal" title="Phares">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="changementPhares:" destination="3V4-MY-6vC" eventType="touchUpInside" id="zfH-AD-LqC"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="m3q-uH-8eW"/>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="cameraView" destination="GLr-F0-LR8" id="bBU-1X-Hoh"/>
+                        <outlet property="joystickCamera" destination="UgF-eo-Tyg" id="uDn-d5-KrN"/>
+                        <outlet property="joystickMotor" destination="gc7-Jj-t7H" id="NSS-W9-P4V"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tFu-ac-JVj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1106" y="400"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Addresse_IP" width="222" height="38"/>
+        <image name="Background" width="480" height="320"/>
+        <image name="Button" width="111" height="41"/>
+        <image name="ButtonStop" width="111" height="41"/>
+        <image name="Button_Pressed" width="111" height="41"/>
+        <image name="Button_PressedStop" width="111" height="41"/>
+        <image name="Logo" width="395" height="91"/>
+        <image name="stick_base.png" width="300" height="300"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+    <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+</document>

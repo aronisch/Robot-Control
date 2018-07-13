@@ -1,0 +1,558 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8E1AC3391A5DB9CA002EE58E /* SIOSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E1AC3351A5DB9CA002EE58E /* SIOSocket.m */; };
+		8E2241141A49F4F0005F4DF0 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E2241131A49F4F0005F4DF0 /* CFNetwork.framework */; };
+		8E2241161A49F509005F4DF0 /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E2241151A49F509005F4DF0 /* libicucore.dylib */; };
+		8E2241181A49F515005F4DF0 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E2241171A49F515005F4DF0 /* Security.framework */; };
+		8E22411A1A49F51F005F4DF0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E2241191A49F51F005F4DF0 /* Foundation.framework */; };
+		8E25A5711A2A726700FA779A /* JoyStickView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E25A56C1A2A726700FA779A /* JoyStickView.m */; };
+		8E32EB511AB0E9A100D146A2 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E32EB4F1AB0E9A100D146A2 /* Default.png */; };
+		8E32EB521AB0E9A100D146A2 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E32EB501AB0E9A100D146A2 /* Default@2x.png */; };
+		8E54C5281A24EC8500352263 /* RobotDrivingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E54C5271A24EC8500352263 /* RobotDrivingViewController.m */; };
+		8E59460E1AACDF3D004D455D /* SocketIO.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E5946041AACDF3D004D455D /* SocketIO.m */; };
+		8E59460F1AACDF3D004D455D /* SocketIOJSONSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E5946061AACDF3D004D455D /* SocketIOJSONSerialization.m */; };
+		8E5946101AACDF3D004D455D /* SocketIOPacket.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E5946081AACDF3D004D455D /* SocketIOPacket.m */; };
+		8E5946111AACDF3D004D455D /* SocketIOTransportWebsocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E59460B1AACDF3D004D455D /* SocketIOTransportWebsocket.m */; };
+		8E5946121AACDF3D004D455D /* SocketIOTransportXHR.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E59460D1AACDF3D004D455D /* SocketIOTransportXHR.m */; };
+		8E5946161AACDFD5004D455D /* SRWebSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E5946151AACDFD5004D455D /* SRWebSocket.m */; };
+		8E5D81111AB77A7200A7F6F5 /* stick_base.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E5D810F1AB77A7200A7F6F5 /* stick_base.png */; };
+		8E5D81121AB77A7200A7F6F5 /* stick_hold.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E5D81101AB77A7200A7F6F5 /* stick_hold.png */; };
+		8ECE70111A24DF980079537B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ECE70101A24DF980079537B /* main.m */; };
+		8ECE70141A24DF980079537B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ECE70131A24DF980079537B /* AppDelegate.m */; };
+		8ECE70171A24DF980079537B /* RobotStartingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ECE70161A24DF980079537B /* RobotStartingViewController.m */; };
+		8ECE701A1A24DF980079537B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8ECE70181A24DF980079537B /* Main.storyboard */; };
+		8ECE701C1A24DF980079537B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8ECE701B1A24DF980079537B /* Images.xcassets */; };
+		8ECE701F1A24DF980079537B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8ECE701D1A24DF980079537B /* LaunchScreen.xib */; };
+		8ECE702B1A24DF980079537B /* Robot_ControlTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ECE702A1A24DF980079537B /* Robot_ControlTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8ECE70251A24DF980079537B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8ECE70031A24DF980079537B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8ECE700A1A24DF980079537B;
+			remoteInfo = "Robot Control";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8E1AC3341A5DB9CA002EE58E /* SIOSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIOSocket.h; sourceTree = "<group>"; };
+		8E1AC3351A5DB9CA002EE58E /* SIOSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIOSocket.m; sourceTree = "<group>"; };
+		8E1AC3361A5DB9CA002EE58E /* socket.io.js.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = socket.io.js.h; sourceTree = "<group>"; };
+		8E2241131A49F4F0005F4DF0 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		8E2241151A49F509005F4DF0 /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
+		8E2241171A49F515005F4DF0 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		8E2241191A49F51F005F4DF0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		8E25A56C1A2A726700FA779A /* JoyStickView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JoyStickView.m; sourceTree = "<group>"; };
+		8E25A56D1A2A726700FA779A /* JoyStickView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JoyStickView.h; sourceTree = "<group>"; };
+		8E32EB4F1AB0E9A100D146A2 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		8E32EB501AB0E9A100D146A2 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		8E54C5261A24EC8500352263 /* RobotDrivingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RobotDrivingViewController.h; sourceTree = "<group>"; };
+		8E54C5271A24EC8500352263 /* RobotDrivingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RobotDrivingViewController.m; sourceTree = "<group>"; };
+		8E5946031AACDF3D004D455D /* SocketIO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SocketIO.h; sourceTree = "<group>"; };
+		8E5946041AACDF3D004D455D /* SocketIO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SocketIO.m; sourceTree = "<group>"; };
+		8E5946051AACDF3D004D455D /* SocketIOJSONSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SocketIOJSONSerialization.h; sourceTree = "<group>"; };
+		8E5946061AACDF3D004D455D /* SocketIOJSONSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SocketIOJSONSerialization.m; sourceTree = "<group>"; };
+		8E5946071AACDF3D004D455D /* SocketIOPacket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SocketIOPacket.h; sourceTree = "<group>"; };
+		8E5946081AACDF3D004D455D /* SocketIOPacket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SocketIOPacket.m; sourceTree = "<group>"; };
+		8E5946091AACDF3D004D455D /* SocketIOTransport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SocketIOTransport.h; sourceTree = "<group>"; };
+		8E59460A1AACDF3D004D455D /* SocketIOTransportWebsocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SocketIOTransportWebsocket.h; sourceTree = "<group>"; };
+		8E59460B1AACDF3D004D455D /* SocketIOTransportWebsocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SocketIOTransportWebsocket.m; sourceTree = "<group>"; };
+		8E59460C1AACDF3D004D455D /* SocketIOTransportXHR.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SocketIOTransportXHR.h; sourceTree = "<group>"; };
+		8E59460D1AACDF3D004D455D /* SocketIOTransportXHR.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SocketIOTransportXHR.m; sourceTree = "<group>"; };
+		8E5946131AACDFD5004D455D /* SocketRocket-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SocketRocket-Prefix.pch"; sourceTree = "<group>"; };
+		8E5946141AACDFD5004D455D /* SRWebSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRWebSocket.h; sourceTree = "<group>"; };
+		8E5946151AACDFD5004D455D /* SRWebSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRWebSocket.m; sourceTree = "<group>"; };
+		8E5D810F1AB77A7200A7F6F5 /* stick_base.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stick_base.png; sourceTree = "<group>"; };
+		8E5D81101AB77A7200A7F6F5 /* stick_hold.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stick_hold.png; sourceTree = "<group>"; };
+		8ECE700B1A24DF980079537B /* Robot Control.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Robot Control.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8ECE700F1A24DF980079537B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8ECE70101A24DF980079537B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8ECE70121A24DF980079537B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		8ECE70131A24DF980079537B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		8ECE70151A24DF980079537B /* RobotStartingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RobotStartingViewController.h; sourceTree = "<group>"; };
+		8ECE70161A24DF980079537B /* RobotStartingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RobotStartingViewController.m; sourceTree = "<group>"; };
+		8ECE70191A24DF980079537B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8ECE701B1A24DF980079537B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		8ECE701E1A24DF980079537B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		8ECE70241A24DF980079537B /* Robot ControlTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Robot ControlTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8ECE70291A24DF980079537B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8ECE702A1A24DF980079537B /* Robot_ControlTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Robot_ControlTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8ECE70081A24DF980079537B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E22411A1A49F51F005F4DF0 /* Foundation.framework in Frameworks */,
+				8E2241181A49F515005F4DF0 /* Security.framework in Frameworks */,
+				8E2241161A49F509005F4DF0 /* libicucore.dylib in Frameworks */,
+				8E2241141A49F4F0005F4DF0 /* CFNetwork.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8ECE70211A24DF980079537B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8E1AC3301A5DB9CA002EE58E /* SocketIO */ = {
+			isa = PBXGroup;
+			children = (
+				8E5946131AACDFD5004D455D /* SocketRocket-Prefix.pch */,
+				8E5946141AACDFD5004D455D /* SRWebSocket.h */,
+				8E5946151AACDFD5004D455D /* SRWebSocket.m */,
+				8E5946031AACDF3D004D455D /* SocketIO.h */,
+				8E5946041AACDF3D004D455D /* SocketIO.m */,
+				8E5946051AACDF3D004D455D /* SocketIOJSONSerialization.h */,
+				8E5946061AACDF3D004D455D /* SocketIOJSONSerialization.m */,
+				8E5946071AACDF3D004D455D /* SocketIOPacket.h */,
+				8E5946081AACDF3D004D455D /* SocketIOPacket.m */,
+				8E5946091AACDF3D004D455D /* SocketIOTransport.h */,
+				8E59460A1AACDF3D004D455D /* SocketIOTransportWebsocket.h */,
+				8E59460B1AACDF3D004D455D /* SocketIOTransportWebsocket.m */,
+				8E59460C1AACDF3D004D455D /* SocketIOTransportXHR.h */,
+				8E59460D1AACDF3D004D455D /* SocketIOTransportXHR.m */,
+				8E1AC3331A5DB9CA002EE58E /* Source */,
+			);
+			path = SocketIO;
+			sourceTree = "<group>";
+		};
+		8E1AC3331A5DB9CA002EE58E /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				8E1AC3341A5DB9CA002EE58E /* SIOSocket.h */,
+				8E1AC3351A5DB9CA002EE58E /* SIOSocket.m */,
+				8E1AC3361A5DB9CA002EE58E /* socket.io.js.h */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		8E2241121A49F472005F4DF0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8E2241191A49F51F005F4DF0 /* Foundation.framework */,
+				8E2241171A49F515005F4DF0 /* Security.framework */,
+				8E2241151A49F509005F4DF0 /* libicucore.dylib */,
+				8E2241131A49F4F0005F4DF0 /* CFNetwork.framework */,
+			);
+			name = Frameworks;
+			path = "Robot Control";
+			sourceTree = "<group>";
+		};
+		8ECE70021A24DF980079537B = {
+			isa = PBXGroup;
+			children = (
+				8ECE700D1A24DF980079537B /* Robot Control */,
+				8ECE70271A24DF980079537B /* Robot ControlTests */,
+				8ECE700C1A24DF980079537B /* Products */,
+				8E2241121A49F472005F4DF0 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		8ECE700C1A24DF980079537B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8ECE700B1A24DF980079537B /* Robot Control.app */,
+				8ECE70241A24DF980079537B /* Robot ControlTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8ECE700D1A24DF980079537B /* Robot Control */ = {
+			isa = PBXGroup;
+			children = (
+				8E32EB4F1AB0E9A100D146A2 /* Default.png */,
+				8E32EB501AB0E9A100D146A2 /* Default@2x.png */,
+				8E5D810F1AB77A7200A7F6F5 /* stick_base.png */,
+				8E5D81101AB77A7200A7F6F5 /* stick_hold.png */,
+				8E1AC3301A5DB9CA002EE58E /* SocketIO */,
+				8E25A56C1A2A726700FA779A /* JoyStickView.m */,
+				8E25A56D1A2A726700FA779A /* JoyStickView.h */,
+				8ECE70121A24DF980079537B /* AppDelegate.h */,
+				8ECE70131A24DF980079537B /* AppDelegate.m */,
+				8ECE70151A24DF980079537B /* RobotStartingViewController.h */,
+				8ECE70161A24DF980079537B /* RobotStartingViewController.m */,
+				8ECE70181A24DF980079537B /* Main.storyboard */,
+				8E54C5261A24EC8500352263 /* RobotDrivingViewController.h */,
+				8E54C5271A24EC8500352263 /* RobotDrivingViewController.m */,
+				8ECE701B1A24DF980079537B /* Images.xcassets */,
+				8ECE701D1A24DF980079537B /* LaunchScreen.xib */,
+				8ECE700E1A24DF980079537B /* Supporting Files */,
+			);
+			path = "Robot Control";
+			sourceTree = "<group>";
+		};
+		8ECE700E1A24DF980079537B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8ECE700F1A24DF980079537B /* Info.plist */,
+				8ECE70101A24DF980079537B /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8ECE70271A24DF980079537B /* Robot ControlTests */ = {
+			isa = PBXGroup;
+			children = (
+				8ECE702A1A24DF980079537B /* Robot_ControlTests.m */,
+				8ECE70281A24DF980079537B /* Supporting Files */,
+			);
+			path = "Robot ControlTests";
+			sourceTree = "<group>";
+		};
+		8ECE70281A24DF980079537B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8ECE70291A24DF980079537B /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8ECE700A1A24DF980079537B /* Robot Control */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8ECE702E1A24DF980079537B /* Build configuration list for PBXNativeTarget "Robot Control" */;
+			buildPhases = (
+				8ECE70071A24DF980079537B /* Sources */,
+				8ECE70081A24DF980079537B /* Frameworks */,
+				8ECE70091A24DF980079537B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Robot Control";
+			productName = "Robot Control";
+			productReference = 8ECE700B1A24DF980079537B /* Robot Control.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8ECE70231A24DF980079537B /* Robot ControlTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8ECE70311A24DF980079537B /* Build configuration list for PBXNativeTarget "Robot ControlTests" */;
+			buildPhases = (
+				8ECE70201A24DF980079537B /* Sources */,
+				8ECE70211A24DF980079537B /* Frameworks */,
+				8ECE70221A24DF980079537B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8ECE70261A24DF980079537B /* PBXTargetDependency */,
+			);
+			name = "Robot ControlTests";
+			productName = "Robot ControlTests";
+			productReference = 8ECE70241A24DF980079537B /* Robot ControlTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8ECE70031A24DF980079537B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Arthur Rönisch";
+				TargetAttributes = {
+					8ECE700A1A24DF980079537B = {
+						CreatedOnToolsVersion = 6.1;
+					};
+					8ECE70231A24DF980079537B = {
+						CreatedOnToolsVersion = 6.1;
+						TestTargetID = 8ECE700A1A24DF980079537B;
+					};
+				};
+			};
+			buildConfigurationList = 8ECE70061A24DF980079537B /* Build configuration list for PBXProject "Robot Control" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8ECE70021A24DF980079537B;
+			productRefGroup = 8ECE700C1A24DF980079537B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8ECE700A1A24DF980079537B /* Robot Control */,
+				8ECE70231A24DF980079537B /* Robot ControlTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8ECE70091A24DF980079537B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E32EB521AB0E9A100D146A2 /* Default@2x.png in Resources */,
+				8ECE701A1A24DF980079537B /* Main.storyboard in Resources */,
+				8E32EB511AB0E9A100D146A2 /* Default.png in Resources */,
+				8ECE701F1A24DF980079537B /* LaunchScreen.xib in Resources */,
+				8ECE701C1A24DF980079537B /* Images.xcassets in Resources */,
+				8E5D81111AB77A7200A7F6F5 /* stick_base.png in Resources */,
+				8E5D81121AB77A7200A7F6F5 /* stick_hold.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8ECE70221A24DF980079537B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8ECE70071A24DF980079537B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E5946161AACDFD5004D455D /* SRWebSocket.m in Sources */,
+				8E5946121AACDF3D004D455D /* SocketIOTransportXHR.m in Sources */,
+				8E1AC3391A5DB9CA002EE58E /* SIOSocket.m in Sources */,
+				8E25A5711A2A726700FA779A /* JoyStickView.m in Sources */,
+				8ECE70171A24DF980079537B /* RobotStartingViewController.m in Sources */,
+				8ECE70141A24DF980079537B /* AppDelegate.m in Sources */,
+				8E59460E1AACDF3D004D455D /* SocketIO.m in Sources */,
+				8ECE70111A24DF980079537B /* main.m in Sources */,
+				8E54C5281A24EC8500352263 /* RobotDrivingViewController.m in Sources */,
+				8E59460F1AACDF3D004D455D /* SocketIOJSONSerialization.m in Sources */,
+				8E5946111AACDF3D004D455D /* SocketIOTransportWebsocket.m in Sources */,
+				8E5946101AACDF3D004D455D /* SocketIOPacket.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8ECE70201A24DF980079537B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8ECE702B1A24DF980079537B /* Robot_ControlTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8ECE70261A24DF980079537B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8ECE700A1A24DF980079537B /* Robot Control */;
+			targetProxy = 8ECE70251A24DF980079537B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8ECE70181A24DF980079537B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8ECE70191A24DF980079537B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8ECE701D1A24DF980079537B /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8ECE701E1A24DF980079537B /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8ECE702C1A24DF980079537B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8ECE702D1A24DF980079537B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8ECE702F1A24DF980079537B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "";
+				INFOPLIST_FILE = "Robot Control/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		8ECE70301A24DF980079537B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "";
+				INFOPLIST_FILE = "Robot Control/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		8ECE70321A24DF980079537B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Robot ControlTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Robot Control.app/Robot Control";
+			};
+			name = Debug;
+		};
+		8ECE70331A24DF980079537B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Robot ControlTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Robot Control.app/Robot Control";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8ECE70061A24DF980079537B /* Build configuration list for PBXProject "Robot Control" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8ECE702C1A24DF980079537B /* Debug */,
+				8ECE702D1A24DF980079537B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8ECE702E1A24DF980079537B /* Build configuration list for PBXNativeTarget "Robot Control" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8ECE702F1A24DF980079537B /* Debug */,
+				8ECE70301A24DF980079537B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8ECE70311A24DF980079537B /* Build configuration list for PBXNativeTarget "Robot ControlTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8ECE70321A24DF980079537B /* Debug */,
+				8ECE70331A24DF980079537B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8ECE70031A24DF980079537B /* Project object */;
+}
